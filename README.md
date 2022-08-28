@@ -14,41 +14,28 @@ It means if you have stored 5 cookies on the user's system, each having 4KB in s
  A session will contain some unique data about that client to allow the server to keep track of the user’s state. In session-based authentication, the user’s state is stored in the server’s memory or a database.
 
 # How does the session work? 
+![mohass](https://user-images.githubusercontent.com/94321523/187096087-eda0c685-2371-4061-9b7d-bb04ece2a80e.png)
+
+
+# Why Use Session ?
+-	Sessions are used to store information such as UserID over the server more securely, where it cannot be tempered.
+-	It can also transfer the information in the form of value from one web page to another.
+-	It can be used as an alternative to cookies for browsers that don't support cookies to store variables in a more secure way.
+
+
+# Key Differences between Session and Cookies: 
+-	Sessions are server-side files that store the user information, whereas Cookies are client-side files that contain user information on a local computer.
+-	Sessions are cookies dependent, whereas Cookies are not dependent on Session.
+-	The session ends when the user closes the browser or logout from the application, whereas Cookies expire at the set time.
+-	A session can store as much data as a user want, whereas Cookies have a limited size of 4KB.
+-	Sessions are more secured compared to cookies, as they save data in encrypted form
+-	If persistent data must remain when the user closes the browser, use cookies.
+-	If persistent data does not have to remain when the user closes the browser, use sessions.
 
 
 
-## User Journey
-User will start his/her journey from the landing page 📃 which show some information about our app 
-and it has a Get-Started 🚀 button to move for home page.Once the page is opend, he/she will see a suggested books.
-Also he/she can search about any books he/she is looking for.In addition to, Once he/she start type in the search bar,
-he/she will get a suggestions for what he is looking for.
 
-
-## How To clone Our App 👍: 
-- if you are a git user:
-    - In Your terminal write `git clone https://github.com/CA-G12/Books-Station-Moh-Saif.git`
-    - Then `cd Books-Station-Moh-Saif`
-
-
-## How Test Our App  👍: 
-- Open gitBash where project path is.
-- Type -> `node install`
-- then Type -> `npm test`
-
-
-## Technologies ⚙: 
-- HTML5
-- CSS3
-- Javascript
-- Node.js
-- Npm pakages [Jest - Supertest - Mimetypes - Eslint ] 
-- Git & Github
-- Heroku
-- JSON Files
-- Google book api [https://www.googleapis.com/books/v1/volumes?q=BookName]
-- Figma
-
-
-## Our Team 👩‍💻👨‍💻
-- [Mohammad Balousha](https://github.com/MohammedOmar123).
-- [Saif Al-Hayek](https://github.com/SaifHayek).
+# How to use the session in your express app ?
+- npm install express-session.
+![Screenshot (364)](https://user-images.githubusercontent.com/94321523/187096466-4d984213-a396-4997-9015-9129fcc4817a.png)
+ 
